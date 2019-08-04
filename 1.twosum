@@ -15,24 +15,23 @@ code:
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         int numsl = nums.length;
-        int n[] = new int[2];
+        
         for(int i=0;i<numsl;i++){
             for(int j=i+1;j<numsl;j++){
                 if((nums[i]+nums[j])==target){
-                    n[0] =i;
-                    n[1]=j;
-                    return (n);
                     
+                    return new int[] {i,j};
                     }
                 
                 }
             }
-        return (n);
+        return new int[] {0};
      }
     
     }
+
     
     
     Desc:
-    Runtime: 27 ms, faster than 18.43% of Java online submissions for Two Sum.
-Memory Usage: 37.1 MB, less than 99.51% of Java online submissions for Two Sum.
+    Runtime: 19 ms, faster than 29.73% of Java online submissions for Two Sum.
+Memory Usage: 36.5 MB, less than 99.69% of Java online submissions for Two Sum.
